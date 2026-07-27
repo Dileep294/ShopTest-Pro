@@ -1,0 +1,18 @@
+# Node dependencies
+node_modules/
+
+# Cypress generated outputs
+cypress/downloads/
+screenshots/
+videos/
+
+# Report generated files
+reports/json/
+reports/html/
+reports/merged-report.json
+
+# Environment / System files
+.env
+.DS_Store
+Thumbs.db
+*.log

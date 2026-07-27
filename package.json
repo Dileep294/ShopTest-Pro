@@ -1,0 +1,39 @@
+{
+  "name": "ecommerce-testing-framework",
+  "version": "1.0.0",
+  "description": "Industry-level QA Automation Testing Framework using JavaScript, Cypress, POM, and Mochawesome Reporting",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "npm run clean:reports && npm run cypress:run && npm run generate:report",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:edge": "cypress run --browser edge",
+    "test:headed": "cypress run --headed",
+    "test:spec": "cypress run --spec",
+    "clean:reports": "rimraf reports/json reports/html reports/merged-report.json",
+    "report:merge": "mochawesome-merge reports/json/*.json > reports/merged-report.json",
+    "report:generate": "marge reports/merged-report.json -f report -o reports/html --inline",
+    "generate:report": "npm run report:merge && npm run report:generate"
+  },
+  "keywords": [
+    "cypress",
+    "javascript",
+    "qa-automation",
+    "page-object-model",
+    "testing",
+    "mochawesome",
+    "saucedemo",
+    "e2e-testing"
+  ],
+  "author": "QA Automation Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^5.0.7"
+  }
+}
