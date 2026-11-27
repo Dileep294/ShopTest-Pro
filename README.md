@@ -64,8 +64,9 @@ ecommerce-testing-framework/
 Clone the repository and install all dependencies:
 
 ```bash
-# Navigate to workspace directory
-cd "c:\Users\dilee\OneDrive\Desktop\TestMart Automation"
+# Clone the repository and enter the project directory
+git clone <repository-url>
+cd ShopTest-Pro
 
 # Install dependencies
 npm install
@@ -131,7 +132,7 @@ npm run generate:report
 ```
 
 Report Output Location:
-- Merged HTML Report: [reports/html/report.html](file:///c:/Users/dilee/OneDrive/Desktop/TestMart%20Automation/reports/html/report.html)
+- Merged HTML Report: `reports/html/report.html` (generated after a successful `npm test` run)
 
 ---
 
@@ -158,9 +159,6 @@ Report Output Location:
 | | TC-CHK-02 | Customer details submission & overview check |
 | | TC-CHK-03 | Order completion & success message verification |
 | **API** | TC-API-01-06 | GET, POST, PUT, DELETE REST API request validations |
-
----
-
 
 ---
 ## ⚙️ Best Practices Implemented
