@@ -161,6 +161,8 @@ Report Output Location:
 
 ---
 
+
+---
 ## ⚙️ Best Practices Implemented
 
 1. **Page Object Model (POM)**: Complete isolation of DOM selectors and web actions into dedicated page classes.
